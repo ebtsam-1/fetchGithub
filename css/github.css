@@ -1,0 +1,190 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  /*
+  font-family:Abel
+  font-family:Anton
+  font-family:Josefin
+  background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  */
+  html {
+    scroll-behavior: smooth;
+  }
+ 
+  :root{
+      --main-color:rgb(87 134 180);
+    
+    
+  }
+  
+  
+  body{
+      background-color: #282c35;
+  }
+/*
+we add media quaries to the contaner in order to be responsive,
+and don't put width just padding an marign.
+*/
+
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* small */
+
+@media (max-width:767px){
+    .container{
+        box-sizing: border-box;
+    }
+}
+@media (min-width:768px){
+    .container{
+        width: 750px;
+    }
+}
+/* medium */
+
+@media (min-width:992px){
+    .container{
+        width: 950px;
+    }
+}
+/* large */
+
+@media (min-width:1200px){
+    .container{
+        width: 1170px;
+    }
+}
+/*
+<i class="fas fa-chevron-left"></i></a>
+<i class="fas fa-shopping-cart"></i>
+<i class="fas fa-gift"></i>
+<i class="fas fa-gifts"></i>
+<i class="far fa-check-circle"></i>
+<i class="fab fa-glide-g"></i>
+<i class="fab fa-gulp"></i>
+<i class="fab fa-google-wallet"></i>
+<i class="fas fa-map-signs"></i>
+<i class="fas fa-heartbeat"></i>
+<i class="far fa-snowflake"></i>
+<i class="fas fa-bell"></i>
+<i class="fas fa-wifi"></i>
+<i class="fas fa-cannabis"></i>
+*/
+/*-----------Global Classes-----------*/
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+input{
+    outline: none;
+}
+.btn{
+    font-size: 1rem;
+    background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    border: 2px solid transparent;
+    color: #1c2125;
+
+}
+.btn:hover{
+    background: none;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+section{
+    margin-bottom: 50px;
+}
+.arrow-image{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 98%;
+    left: 0;
+}
+.arrow-image img{
+    width: 70px;
+}
+/*-------------Global Classes-----------*/
+
+.container .header{
+    width: 100%;
+    height: 150px;
+    background-image: url(../pexels-dmitry-zvolskiy-1879069.jpg);
+    background-size: cover;
+    background-position: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.repos-container{
+    padding-top: 1rem;
+    color: #ffa7c4;
+    width: 100%;
+}
+.repos-container .get-repos{
+    width: 80%;
+}
+.repos-container .get-repos input{
+    border: none;
+    border-bottom: 1px solid #ffa7c4;
+    padding: 0.7rem 0.5rem;
+    width: 80%;
+    background: none;
+    outline: none;
+    color: #ffa7c4;
+}
+.repos-container .get-repos input::placeholder{
+    color: #ffa7c49d;
+    font-size: 1.3em;
+}
+
+.repos-container .get-repos span{
+    font-size: 1.8em;
+    cursor: pointer;
+}
+.repos-container .show-data{
+    min-height: 200px;
+    width: 100%;
+    padding: 2.5rem 0 1rem;
+    display: grid;
+    grid-template-columns: 48% 48%;
+    justify-content: space-between;
+}
+.repoDiv{
+    padding: 1rem;
+    background-color: #ffa7c4;
+    color: #282c35;
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1em;
+    align-items: center;
+}
+
+.repoDiv a{
+      border: 1.3px solid #282c35;
+      padding: 0.5rem 1.5rem;
+      border-radius: 50px;
+      font-size: 1.1em;
+      color: #282c35;
+      transition: 0.5s;
+}
+.repoDiv a:hover{
+    background-color: #282c35;
+    color: #ffa7c4;
+}
